@@ -17,5 +17,5 @@ USER jreuser
 EXPOSE 8092
 
 CMD java -javaagent:/usr/src/reach-upload-service/applicationinsights-agent.jar \
--Xmx${JAVA_MX:-1024M} -Xms${JAVA_MS:-1024M} -jar reach-upload-service.jar
+-Xmx${JAVA_MX:-512M} -Xms${JAVA_MS:-256M} -jar reach-upload-service.jar
 
